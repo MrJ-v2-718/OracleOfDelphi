@@ -1,2 +1,2 @@
 # OracleOfDelphi
-The Oracle Of Delphi series is my exploration through Oracle documentation on Java.
+The Oracle Of Delphi is my documented exploration of Java.
