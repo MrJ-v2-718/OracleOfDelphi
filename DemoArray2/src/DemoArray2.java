@@ -1,0 +1,16 @@
+public class DemoArray2 {
+
+    public static void main(String[] args) {
+        // Array of size four declared
+        double[] salaries = {16.25, 17.55, 18.25, 19.85};
+
+        // Starts at index(subscript) 0 in Java
+        System.out.println("Salaries one by one are: ");
+        System.out.println(salaries[0]);
+        System.out.println(salaries[1]);
+        System.out.println(salaries[2]);
+        System.out.println(salaries[3]);
+        // The statement below will generate an out-of-bounds error
+        //System.out.println(salaries[4]);
+    }
+}

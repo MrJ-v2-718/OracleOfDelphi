@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class BowlingTeamDemo4 {
+    public static void main(String[] args) {
+        String name;
+        final int NUM_TEAMS = 4;
+        BowlingTeam[] teams = new BowlingTeam[NUM_TEAMS];
+        int i, j;
+        final int NUM_TEAM_MEMBERS = 4;
+        Scanner input = new Scanner(System.in);
+
+        getTeamData(teams);
+
+        for (j = 0; j < NUM_TEAMS; j++) {
+            System.out.println("\nMembers of team " +
+                    teams[j].getTeamName());
+            for (i = 0; i < NUM_TEAM_MEMBERS; i++) {
+                System.out.print(teams[j].getMembers(i) + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.print("\n\nEnter a team name to see its roster: ");
+        name = input.nextLine();
+
+        for (j = 0; j < teams.length; j++) {
+            if (name.equals(teams[j].getTeamName())) {
+                for (i = 0; i < NUM_TEAM_MEMBERS; i++) {
+                    System.out.print(teams[j].getMembers(i) + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+
+    public static void getTeamData(BowlingTeam[] teams) {
+        String name;
+        final int NUM_TEAMS = 4;
+        int i, j;
+        final int NUM_TEAM_MEMBERS = 4;
+        Scanner input = new Scanner(System.in);
+
+        for (j = 0; j < NUM_TEAMS; j++) {
+            teams[j] = new BowlingTeam();
+            System.out.print("Enter team name: ");
+            name = input.nextLine();
+            teams[j].setTeamName(name);
+            for (i = 0; i < NUM_TEAM_MEMBERS; i++) {
+                System.out.print("Enter team member's name: ");
+                name = input.nextLine();
+                teams[j].setMembers(i, name);
+            }
+        }
+    }
+}
