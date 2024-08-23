@@ -1,0 +1,82 @@
+****  WELCOME TO THE TOKEN TEST PROGRAM *****
+
+This program will test student Token classes
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 1      Data after instantiation and balance set:
+
+                ID: 00109        Thomas     Peterson   12      12.51     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 2      Data after instantiation and balance set:
+
+                ID: 02036        Regina     Zoeg        9       9.00     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 3      ** Error:  Error with Quadrant Number:  Quadrant: 49
+Record # 3      Data after instantiation and balance set:
+
+                ID: 19655        Phil       Otez        0      11.95     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 4      Data after instantiation and balance set:
+
+                ID: 51121        Gina       Fernandez   3      20.03     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 5      ** Error:  Invalid balance:     Balance: -9.18
+Record # 5      Data after instantiation and balance set:
+
+                ID: 56099        Teesha      Smith      6       0.00     true  false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 6      ** Error:  ID length is not correct.  Must be 5 digits:         ID: 9090
+Record # 6      Data after instantiation and balance set:
+
+                ID: 99999        Frank      Moore       8       3.00     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 7      Data after instantiation and balance set:
+
+                ID: 56321        Ernest     Wallace    10       5.98     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 8      Data after instantiation and balance set:
+
+                ID: 58123        Helen      Harrison    4      21.09     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 9      Data after instantiation and balance set:
+
+                ID: 59909                   Stucker     2      17.19     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 10     Data after instantiation and balance set:
+
+                ID: 61111                               3       0.00     true  false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 11     ** Error:  ID contains non-digits:      ID: abcde
+Record # 11     Data after instantiation and balance set:
+
+                ID: 99999        Ann        Herrington  7       0.00     true  false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+Record # 12     Data after instantiation and balance set:
+
+                ID: 70019        Bob        Dillon      6       3.50     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Testing mutators on the last record:
+
+                ID: 70019        Chris      Tucker     11       3.50     false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Testing helping methods on the last record:
+
+Current Balance:  3.50
+Adding $20 == New Balance: 23.50
+Spent $12.50 == New Balance: 11.00
+
+Set all 3 alerts:                false true  true
+Clear all 3 alerts:              false false false
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Testing the toString method on the last record
+
+ID: 70019
+Name: Chris Tucker
+Quadrant: 11
+Balance: $11.0
+Zero Balance Alert: false
+Weather Alert: false
+Check-In Alert: false
